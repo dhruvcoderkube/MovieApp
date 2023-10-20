@@ -87,6 +87,7 @@
 				881C38C9281A9BBA008F0CF2 /* MovieApp */,
 				881C38C8281A9BBA008F0CF2 /* Products */,
 				650C4EB24B3C4F003624A106 /* Pods */,
+				AB8B05772AE29AE800F3400C /* README.md */,
 				A5CC2934568D301DD59E55CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +112,6 @@
 				881C38D3281A9BBC008F0CF2 /* Assets.xcassets */,
 				881C38D5281A9BBC008F0CF2 /* LaunchScreen.storyboard */,
 				881C38D8281A9BBC008F0CF2 /* Info.plist */,
-				AB8B05772AE29AE800F3400C /* README.md */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
