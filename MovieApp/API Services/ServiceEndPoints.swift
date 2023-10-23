@@ -1,9 +1,5 @@
 //
-//  ServiceEndPoints.swift
-//  Event
-//
-//  Created by iMac on 30/10/21.
-//  Copyright © 2021 CoderKube. All rights reserved.
+// Copyright (c) 2023 YASSIR. All rights reserved.
 //
 
 import Foundation

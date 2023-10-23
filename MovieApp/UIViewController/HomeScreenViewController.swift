@@ -1,8 +1,5 @@
 //
-//  HomeScreenViewController.swift
-//  MovieApp
-//
-//  Created by Dhruv Jariwala on 28/04/22.
+// Copyright (c) 2023 YASSIR. All rights reserved.
 //
 
 import Foundation
@@ -123,7 +120,6 @@ extension HomeScreenViewController {
     }
     
     func setupTableView() {
-        
         dataSource = UITableViewDiffableDataSource(tableView: movieTableView) { (tableView, indexPath, movie) -> UITableViewCell? in
             // Configure and return your cell here
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "MovieTableviewCell", for: indexPath) as! MovieTableviewCell

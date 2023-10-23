@@ -1,9 +1,7 @@
 //
-//  RootClass.swift
+// Copyright (c) 2023 YASSIR. All rights reserved.
 //
-//  Generated using https://jsonmaster.github.io
-//  Created on April 30, 2022
-//
+
 import Foundation
 import SwiftyJSON
 

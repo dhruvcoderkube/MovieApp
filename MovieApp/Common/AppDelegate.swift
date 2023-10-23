@@ -1,8 +1,5 @@
 //
-//  AppDelegate.swift
-//  MovieApp
-//
-//  Created by Dhruv Jariwala on 28/04/22.
+// Copyright (c) 2023 YASSIR. All rights reserved.
 //
 
 import UIKit

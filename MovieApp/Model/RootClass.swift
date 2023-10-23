@@ -1,3 +1,6 @@
+//
+// Copyright (c) 2023 YASSIR. All rights reserved.
+//
 
 import Foundation
 import SwiftyJSON
