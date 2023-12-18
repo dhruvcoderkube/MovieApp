@@ -13,7 +13,7 @@ enum SectionIdentifier {
 
 class HomeScreenViewController : UIViewController {
     
-    var secureView = SecureView()
+    //var secureView = SecureView()
     
     var dataSource: UITableViewDiffableDataSource<SectionIdentifier, Results>!
     
@@ -80,12 +80,12 @@ extension HomeScreenViewController {
         homeScreenView.topAnchor.constraint(equalTo : view.layoutMarginsGuide.topAnchor, constant: 0).isActive = true
         homeScreenView.bottomAnchor.constraint(equalTo : view.bottomAnchor, constant: 0).isActive = true
         
-        homeScreenView.addSubview(secureView)
-        secureView.contentView.addSubview(movieTableView)
-        secureView.placeholderView.addSubview(placeholderTextLabel)
+        homeScreenView.addSubview(movieTableView)
+        //secureView.contentView.addSubview(movieTableView)
+        //secureView.placeholderView.addSubview(placeholderTextLabel)
         
-        secureView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
+        //secureView.translatesAutoresizingMaskIntoConstraints = false
+        /*NSLayoutConstraint.activate([
             secureView.leadingAnchor.constraint(equalTo: self.homeScreenView.leadingAnchor, constant: 0),
             secureView.trailingAnchor.constraint(equalTo: self.homeScreenView.trailingAnchor, constant: 0),
             secureView.topAnchor.constraint(equalTo: self.homeScreenView.topAnchor, constant: 0),
@@ -93,12 +93,12 @@ extension HomeScreenViewController {
 
             placeholderTextLabel.centerXAnchor.constraint(equalTo: secureView.centerXAnchor),
             placeholderTextLabel.centerYAnchor.constraint(equalTo: secureView.centerYAnchor),
-        ])
+        ])*/
         
-        movieTableView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor, constant: 14).isActive = true
-        movieTableView.trailingAnchor.constraint(equalTo: secureView.trailingAnchor, constant: -14).isActive = true
-        movieTableView.topAnchor.constraint(equalTo: secureView.topAnchor).isActive = true
-        movieTableView.bottomAnchor.constraint(equalTo: secureView.bottomAnchor).isActive = true
+        movieTableView.leadingAnchor.constraint(equalTo: homeScreenView.leadingAnchor, constant: 14).isActive = true
+        movieTableView.trailingAnchor.constraint(equalTo: homeScreenView.trailingAnchor, constant: -14).isActive = true
+        movieTableView.topAnchor.constraint(equalTo: homeScreenView.topAnchor).isActive = true
+        movieTableView.bottomAnchor.constraint(equalTo: homeScreenView.bottomAnchor).isActive = true
     }
     
     func movieList() {
@@ -146,7 +146,6 @@ extension HomeScreenViewController {
 
 extension HomeScreenViewController: UINavigationControllerDelegate{
     public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        UIApplication.shared.statusBarStyle = .darkContent
     }
 }
 
